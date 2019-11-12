@@ -14,8 +14,8 @@ def main():
   
   print("1, 1, %s" % v[0])
   print("1, 2, %s" % v[1])
-  print("2, 1, %s" % v[1])
-  print("2, 2, %s" % v[0])
+  print("2, 1, %s" % v2[1])
+  print("2, 2, %s" % v2[0])
 
   return
 
