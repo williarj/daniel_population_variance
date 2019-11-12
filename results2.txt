@@ -1,0 +1,21 @@
+Num males, Num females, p1, p2, h
+50, 50, 0.05, 0.8, 0.0
+Male_pop, Female_pop, Variance in average brood phenotype
+1, 1, 0.0051880064
+1, 2, 0.1072590336
+2, 1, 0.1072590336
+2, 2, 0.0051880064
+Num males, Num females, p1, p2, h
+50, 50, 0.05, 0.8, 0.5
+Male_pop, Female_pop, Variance in average brood phenotype
+1, 1, 0.0321197004
+1, 2, 0.0357694064
+2, 1, 0.0357694064
+2, 2, 0.0321197004
+Num males, Num females, p1, p2, h
+50, 50, 0.05, 0.8, 1.0
+Male_pop, Female_pop, Variance in average brood phenotype
+1, 1, 0.0771357744
+1, 2, 0.0204751744
+2, 1, 0.0204751744
+2, 2, 0.0771357744
