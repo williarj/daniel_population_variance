@@ -1,105 +1,105 @@
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.95, 0.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0032147136, 0.0048
-0, 1, 0.0633509824, 0.062576
-1, 0, 0.0612995504, 0.061708
-1, 1, 0.0067153856, 0.008176
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0050569136, 0.007852, 0.644028731533
+0, 1, 0.0683138864, 0.069836, 0.978204456154
+1, 0, 0.06936684, 0.074748, 0.928009311286
+1, 1, 0.0054256256, 0.005336, 1.0167964018
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.95, 0.25
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0118955876, 0.0118945
-0, 1, 0.0444039251, 0.04006375
-1, 0, 0.0416759259, 0.04332925
-1, 1, 0.0065960019, 0.00664425
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0141054499, 0.01421075, 0.9925901096
+0, 1, 0.0379274499, 0.04175625, 0.908305939829
+1, 0, 0.03892059, 0.043092, 0.903197577277
+1, 1, 0.0020389176, 0.0033975, 0.600122913907
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.95, 0.5
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0230884364, 0.021123
-0, 1, 0.0160669644, 0.015155
-1, 0, 0.0222781644, 0.019005
-1, 1, 0.0014876304, 0.002274
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0219619116, 0.020107, 1.09225203163
+0, 1, 0.0192459376, 0.024684, 0.779692821261
+1, 0, 0.0177899104, 0.020174, 0.881823654208
+1, 1, 0.0014510624, 0.00163, 0.890222331288
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.95, 0.75
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.05036826, 0.0486825
-0, 1, 0.0054774784, 0.005513
-1, 0, 0.0042165811, 0.00440775
-1, 1, 0.000281, 0.00046
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0621670204, 0.040871, 1.52105454723
+0, 1, 0.0062906856, 0.0067575, 0.930919067703
+1, 0, 0.0046246796, 0.004108, 1.12577400195
+1, 1, 0.0004078536, 0.0005955, 0.684892695214
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.95, 1.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0876945984, 0.075304
-0, 1, 0.0006941504, 0.000664
-1, 0, 0.0, 0.0
-1, 1, 0.0, 0.0
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.09453984, 0.059608, 1.58602603677
+0, 1, 0.0009524656, 0.000924, 1.03080692641
+1, 0, 0.0, 0.0, NAN
+1, 1, 0.0, 0.0, NAN
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.8, 0.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0098022064, 0.01022
-0, 1, 0.1177944704, 0.121256
-1, 0, 0.1140589184, 0.133544
-1, 1, 0.05427596, 0.073364
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.005619, 0.007212, 0.779118136439
+0, 1, 0.1141599936, 0.125856, 0.907068344775
+1, 0, 0.1310464704, 0.115968, 1.13002268212
+1, 1, 0.0417834624, 0.06852, 0.609799509632
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.8, 0.25
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0131089539, 0.00919875
-0, 1, 0.0742472184, 0.0694185
-1, 0, 0.0666696736, 0.075893
-1, 1, 0.0282492344, 0.0466945
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0101731771, 0.00749625, 1.35710216442
+0, 1, 0.0689184019, 0.07216325, 0.955034618036
+1, 0, 0.0565491116, 0.07324, 0.772106930639
+1, 1, 0.0354316099, 0.04670925, 0.758556600673
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.8, 0.5
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0261752716, 0.018803
-0, 1, 0.0423879404, 0.037811
-1, 0, 0.0310679424, 0.033548
-1, 1, 0.01446691, 0.021789
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0298479136, 0.024266, 1.2300302316
+0, 1, 0.0389912556, 0.041497, 0.939616251777
+1, 0, 0.0461754144, 0.046754, 0.987624896266
+1, 1, 0.01458075, 0.021719, 0.671336157282
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.8, 0.75
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0437244291, 0.03862675
-0, 1, 0.0233330499, 0.02105575
-1, 0, 0.0224004611, 0.02584375
-1, 1, 0.0035833491, 0.00447625
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0529323556, 0.0522845, 1.01239096864
+0, 1, 0.0194902696, 0.0219645, 0.887353210863
+1, 0, 0.0248601604, 0.0230405, 1.07897660207
+1, 1, 0.00347551, 0.005705, 0.609204206836
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.8, 1.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.09544684, 0.061772
-0, 1, 0.0191908656, 0.017476
-1, 0, 0.0, 0.0
-1, 1, 0.0004495664, 0.001108
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.08476944, 0.082056, 1.03306814858
+0, 1, 0.0180237744, 0.0159, 1.13357071698
+1, 0, 0.004515, 0.004404, 1.02520435967
+1, 1, 0.0006283136, 0.001288, 0.487821118012
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.6, 0.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0044567984, 0.005404
-0, 1, 0.1147438016, 0.119056
-1, 0, 0.090387, 0.136812
-1, 1, 0.0869084736, 0.13348
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0052937904, 0.00886, 0.597493273138
+0, 1, 0.11354956, 0.118548, 0.957836150757
+1, 0, 0.1083249456, 0.132436, 0.817941840587
+1, 1, 0.0858914864, 0.137068, 0.626634126127
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.6, 0.25
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0080078651, 0.00767575
-0, 1, 0.0741420571, 0.08249525
-1, 0, 0.0866981451, 0.06718275
-1, 1, 0.0523150059, 0.08159325
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.00867104, 0.008347, 1.03882113334
+0, 1, 0.0766752504, 0.0827715, 0.926348446023
+1, 0, 0.0687956344, 0.0802565, 0.857197041984
+1, 1, 0.0536505584, 0.078461, 0.683786319318
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.6, 0.5
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0211179084, 0.019015
-0, 1, 0.0620307916, 0.058207
-1, 0, 0.0604346444, 0.042961
-1, 1, 0.0233246476, 0.040263
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0218524396, 0.019313, 1.13148861389
+0, 1, 0.05582976, 0.058768, 0.95000272257
+1, 0, 0.0662722636, 0.041989, 1.57832440877
+1, 1, 0.0213564364, 0.042073, 0.507604316307
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.6, 0.75
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0473601856, 0.04592
-0, 1, 0.0569952179, 0.05197975
-1, 0, 0.0697799739, 0.07006575
-1, 1, 0.0100145204, 0.0189055
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.0462320619, 0.04061775, 1.13822311428
+0, 1, 0.0561004904, 0.0503035, 1.11524029938
+1, 0, 0.0647384996, 0.0499405, 1.296312604
+1, 1, 0.0120085731, 0.01790625, 0.670635845026
 Num males, Num females, p1, p2, h
 50, 50, 0.05, 0.6, 1.0
-Male_pop, Female_pop, variance among broods, variance within broods
-0, 0, 0.0841292736, 0.08056
-0, 1, 0.0656215216, 0.05498
-1, 0, 0.06431984, 0.040976
-1, 1, 0.0077444736, 0.013848
+Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio
+0, 0, 0.1023769216, 0.072152, 1.4189062202
+0, 1, 0.0670697216, 0.057104, 1.17451880078
+1, 0, 0.0620432176, 0.05642, 1.09966709677
+1, 1, 0.0104449984, 0.013968, 0.747780526919

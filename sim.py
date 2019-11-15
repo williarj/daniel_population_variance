@@ -8,12 +8,16 @@ def main():
 
   print("Num males, Num females, p1, p2, h")
   print("%s, %s, %s, %s, %s" % (args.males, args.females, args.freqs[0], args.freqs[1], args.dominance)) 
-  print("Male_pop, Female_pop, variance among broods, variance within broods")
+  print("Male_pop, Female_pop, variance among broods, variance within broods, among to within ratio")
 
   for i in [0, 1]:
     for j in [0, 1]:
       variance_among, variance_within = trial(args.males, args.females, args.freqs[i], args.freqs[j], args.dominance, args.offspring)
-      print("%s, %s, %s, %s"% (i, j, variance_among, variance_within))  
+      if variance_within > 0:
+        ratio = variance_among/variance_within
+      else:
+        ratio = "NAN"
+      print("%s, %s, %s, %s, %s"% (i, j, variance_among, variance_within, ratio))  
 
 
   return
