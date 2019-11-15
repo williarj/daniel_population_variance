@@ -5,20 +5,20 @@ import numpy as np
 def main():
   args = parseArgs()
   
-  v = mateMales(args.males, args.females, args.freqs[0], args.freqs[1], args.dominance, args.offspring)
-  v2 = mateMales(args.males, args.females, args.freqs[1], args.freqs[0], args.dominance, args.offspring)
 
   print("Num males, Num females, p1, p2, h")
   print("%s, %s, %s, %s, %s" % (args.males, args.females, args.freqs[0], args.freqs[1], args.dominance)) 
-  print("Male_pop, Female_pop, Variance in average brood phenotype")
-  
-  print("1, 1, %s" % v[0])
-  print("1, 2, %s" % v[1])
-  print("2, 1, %s" % v2[1])
-  print("2, 2, %s" % v2[0])
+  print("Male_pop, Female_pop, variance among broods, variance within broods")
+
+  for i in [0, 1]:
+    for j in [0, 1]:
+      variance_among, variance_within = trial(args.males, args.females, args.freqs[i], args.freqs[j], args.dominance, args.offspring)
+      print("%s, %s, %s, %s"% (i, j, variance_among, variance_within))  
+
 
   return
 
+##DEPRECATED
 #breeds mapes from p1 with females samples from both p1 and p2
 #returns the varaince in average phenotype amongst male broods 
 #partitioned among female source population
@@ -30,22 +30,53 @@ def mateMales(num_males, num_females, p1, p2, h, num_offspring):
     broods_p1.append(mateFemales(male_geno, p1, num_females, num_offspring, h))
     broods_p2.append(mateFemales(male_geno, p2, num_females, num_offspring, h))
     
-  return(np.var(broods_p1), np.var(broods_p2))
+  #calc the variance among brrod averages AND the average variance within broods 
+  print(broods_p1[0:5])
+  p1_stats = (np.var([a for (a,v) in broods_p1]), np.average([v for (a,v) in broods_p1]))
+  p2_stats = (np.var([a for (a,v) in broods_p2]), np.average([v for (a,v) in broods_p2]))
+  
+  return (p1_stats, p2_stats)
     
 
+#samples males from a given population
+#mates them with females from another population
+#returns the variance in average phenotype across broods
+#and the average variance within broods
+def trial(num_males, num_females, p_male, p_female, h, num_offspring):
+  brood_avgs = []
+  brood_vars = []
+
+  for m in range(num_males):
+    male_geno = sampInd(p_male)
+    for f in range(num_females):
+      female_geno = sampInd(p_female)
+      offspring = breed(male_geno, female_geno, num_offspring)
+      avg, var = getStats(offspring, h)
+      brood_avgs.append(avg)
+      brood_vars.append(var)
+
+  variance_in_avg_brood = np.var(brood_avgs)
+  mean_variance_in_brood = np.average(brood_vars)
+
+  return (variance_in_avg_brood, mean_variance_in_brood)
+
+##DEPRECATED##
 #samples females from a given population to mate with a given male
 #returns a list of the average phenotype of each brood sired by the male
 def mateFemales(male, p_female, female_N, offspring_N, h):
   offspring_avg = []
   for f in range(female_N):
     female_geno = sampInd(p_female)
-    offspring_avg.append(getAverage(breed(male, female_geno, offspring_N), h))
+    children = breed(male, female_geno, offspring_N)
+    offspring_avg.append(getStats(children, h))
   return offspring_avg
 
 #get the average in kids phenotypes
+#and the variance in phenotypes
 #given the dominance coefficient
-def getAverage(kids, h):
-  return np.average([phenotype(k, h) for k in kids])
+def getStats(kids, h):
+  phenotypes = [phenotype(k, h) for k in kids]
+  return (np.average(phenotypes), np.var(phenotypes))
 
 #Samples an individual from population with allele frequency p
 def sampInd(p):
